@@ -6,7 +6,7 @@ import React from 'react'
 
 function App() {
     return (
-        <Box mx={20} my={10}>
+        <Box maxW='70%' margin="auto">
             <NavBar></NavBar>
             <Divider p={2}/>
             <Main></Main>

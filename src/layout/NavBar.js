@@ -4,7 +4,7 @@ import { MdWbSunny} from "react-icons/md"
 
 function NavBar() {
     return (
-        <Flex> 
+        <Flex m={6}> 
             <Box>
                 Fam Logo
             </Box>
