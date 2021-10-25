@@ -4,7 +4,7 @@ import { Box, Image, Badge, VStack, Spacer, HStack, Select, FormControl } from '
  export default function Card({animation, name, price, colour, size}) {
      const [Size, setSize] = useState('md')
     return (
-        <Box maxW='sm' border='1px' borderRadius='xl' p={3}>
+        <Box maxW='sm' border='1px' borderRadius='xl' p={3} >
             <a href={animation} target='_blank' rel='noreferrer'>
                 <Image mb={2} src={animation} borderRadius='xl'/>
             </a>

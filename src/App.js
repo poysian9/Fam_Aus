@@ -7,13 +7,16 @@ import React from 'react'
 
 function App() {
     return (
-        <Box maxW='70%' margin="auto">
-            <NavBar></NavBar>
-            <Divider p={2}/>
-            <Main></Main>
-            <Divider p={2}/>
-            <Footer></Footer>
+        <Box bg='primary'>
+            <Box maxW='90%' margin="auto" >
+                <NavBar></NavBar>
+                <Divider p={2}/>
+                <Main></Main>
+                <Divider p={2}/>
+                <Footer></Footer>
+            </Box>
         </Box>
+        
     )
 }
 

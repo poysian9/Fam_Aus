@@ -6,5 +6,5 @@ export const customTheme = extendTheme({
         secondary: "#D683A6",
         background: "#000000"
 
-    }
-})
+    },
+});

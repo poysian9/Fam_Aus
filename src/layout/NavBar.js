@@ -4,12 +4,12 @@ import { MdWbSunny} from "react-icons/md"
 
 function NavBar() {
     return (
-        <Flex m={6}> 
+        <Flex pt={4}> 
             <Box>
                 Fam Logo
             </Box>
             <Spacer/>
-            <Button color = "#FF959D" variant="outline">
+            <Button color = "background" variant="outline">
                 Connect+
             </Button>
             <Button variant="ghost">

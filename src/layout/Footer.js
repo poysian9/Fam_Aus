@@ -6,7 +6,7 @@ export default function Footer() {
         <Box>
             <HStack p={10}>
                 <FormControl maxW='55%'>
-                    <FormLabel>Subscribe for exclusive offer!</FormLabel>
+                    <FormLabel>Subscribe for exclusive offers!</FormLabel>
                     <Input placeholder='example@hotmail.com'></Input>
                     <Button type='submit'>
                         Subscribe!
