@@ -19,8 +19,8 @@ import { Box, Image, Badge, VStack, Spacer, HStack, Select, FormControl } from '
                         {price}
                     </Box>
                 </HStack>
-                <Box>
-                    <Badge borderRadius='full' p={2} colorScheme='teal' maxW='md' >
+                <Box align='start'>
+                    <Badge borderRadius='full' p={2} colorScheme='teal' maxW='md'>
                         {colour}
                     </Badge>  
                 </Box>

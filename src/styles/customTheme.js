@@ -7,4 +7,8 @@ export const customTheme = extendTheme({
         background: "#000000"
 
     },
+    fonts: {
+        heading : 'Marck Script',
+        body : 'Raleway'
+    }
 });

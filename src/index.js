@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import {  ChakraProvider  } from '@chakra-ui/react'; 
 import { customTheme } from './styles/customTheme';
+import "@fontsource/marck-script";
+import "@fontsource/raleway"
+
 
 // import reportWebVitals from './reportWebVitals';
 

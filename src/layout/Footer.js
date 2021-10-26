@@ -1,4 +1,4 @@
-import { Box, HStack, FormControl, Input, Heading, Button, FormLabel, Spacer } from '@chakra-ui/react'
+import { Box, HStack, FormControl, Input, Heading, Button, Spacer } from '@chakra-ui/react'
 import React from 'react'
 
 export default function Footer() {
@@ -6,7 +6,7 @@ export default function Footer() {
         <Box>
             <HStack p={10}>
                 <FormControl maxW='55%'>
-                    <FormLabel>Subscribe for exclusive offers!</FormLabel>
+                    <Heading>Subscribe for exclusive offers!</Heading>
                     <Input placeholder='example@hotmail.com'></Input>
                     <Button type='submit'>
                         Subscribe!
