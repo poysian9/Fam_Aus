@@ -1,8 +1,14 @@
-let gif = 'https://bafybeia5ouyctq6sftzz5gayqcvgmpz5zso7axamlp76hl6hlxb7j5hy4e.ipfs.dweb.link/';
+const gif = {
+    blue : 'https://bafybeiasicztxmbifpauay2mdigo6hfnifh2u5cojc6ctotu63jmom4lia.ipfs.dweb.link/',
+    choc : 'https://bafybeiekstd5oc5l7443lozmce4r25burik73dteycow7eugoibwnz47ou.ipfs.dweb.link/',
+    green : 'https://bafybeielilzwafozh7ihwo4zbbxdly4z4hjsnjc4n4jobx2abh6isrbefi.ipfs.dweb.link/',
+    olive : 'https://bafybeia5liit5zs62oom7r73ff7hdm6eawylekenykfurevgljgqwrn3by.ipfs.dweb.link/',
+    sand : 'https://bafybeigwfjmz5r6awe2nts5o7wwrony56v2oogys2ikrbsxar2sz6xtjqe.ipfs.dweb.link/'
+}
 
 const objData = [
     {
-        animation : gif,
+        animation : gif.blue,
         name : 'Family Crewneck',
         colour : 'Blue',
         price : '100 FTM',
@@ -15,7 +21,7 @@ const objData = [
         }
     },
     {
-        animation : gif,
+        animation : gif.choc,
         name : 'Family Crewneck',
         colour : 'Chocolate',
         price : '100 FTM',
@@ -28,7 +34,7 @@ const objData = [
         }
     },
     {
-        animation : gif,
+        animation : gif.green,
         name : 'Family Crewneck',
         colour : 'Green',
         price : '100 FTM',
@@ -41,7 +47,7 @@ const objData = [
         }
     },
     {
-        animation : gif,
+        animation : gif.olive,
         name : 'Family Crewneck',
         colour : 'Olive',
         price : '100 FTM',
@@ -54,7 +60,7 @@ const objData = [
         }
     },
     {
-        animation : gif,
+        animation : gif.sand,
         name : 'Family Crewneck',
         colour : 'Sand',
         price : '100 FTM',

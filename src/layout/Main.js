@@ -7,14 +7,14 @@ import objData from '../assets/object_data';
 
 function Main() {
     return (
-        <Box mb={10}>
+        <Box mb={2}>
             <VStack>
-                <Box h={200}/>
+                <Box h={2}/>
                 <Box >
-                    <Heading as='h1' size='4xl' p={10} textAlign='center' letterSpacing='widest' m={10} textShadow='4px 4px #ff0000'>
+                    <Heading as='h1' size='4xl' p={10} textAlign='center' letterSpacing='widest' m={10} textShadow='4px 4px #ff0000' color='primary'>
                         Family Australia
                     </Heading>
-                    <Box pb={20}>
+                    <Box pb={20} px={60}>
                         A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. 
                     </Box>
                 </Box>

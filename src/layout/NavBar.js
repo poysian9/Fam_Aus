@@ -9,7 +9,7 @@ function NavBar() {
                 Fam Logo
             </Box>
             <Spacer/>
-            <Button color = "background" variant="outline">
+            <Button color = "secondary" variant="outline" borderColor='secondary'>
                 Connect+
             </Button>
             <Button variant="ghost">

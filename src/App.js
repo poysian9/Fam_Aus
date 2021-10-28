@@ -7,8 +7,8 @@ import React from 'react'
 
 function App() {
     return (
-        <Box bg='primary'>
-            <Box maxW='90%' margin="auto" >
+        <Box bg='background'>
+            <Box maxW='90%' margin="auto" overflowX='hidden'>
                 <NavBar></NavBar>
                 <Divider p={2}/>
                 <Main></Main>
