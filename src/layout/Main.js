@@ -1,7 +1,8 @@
-import { VStack, Box, Heading, Divider, SimpleGrid } from '@chakra-ui/react';
+import { VStack, Box, Heading, Divider, SimpleGrid, Image } from '@chakra-ui/react';
 import React from 'react';
 import Card from '../components/Card';
 import objData from '../assets/object_data';
+import ftmHead from '../assets/ftmHead.png';
 
 
 
@@ -11,10 +12,10 @@ function Main() {
             <VStack>
                 <Box h={2}/>
                 <Box >
-                    <Heading as='h1' size='4xl' p={10} textAlign='center' letterSpacing='widest' m={10} textShadow='4px 4px #ff0000' color='primary'>
+                    <Heading as='h1' size='4xl' p={10} textAlign='center' letterSpacing='widest' m={10} textShadow='4px 4px #ff0000' color='primary' appearance='menulist'>
                         Family Australia
                     </Heading>
-                    <Box pb={20} px={60}>
+                    <Box pb={20} px={60} color='whiteAlpha.700' align='center'>
                         A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. A description which describes family. 
                     </Box>
                 </Box>
@@ -33,6 +34,7 @@ function Main() {
                             price={data.price}
                             colour={data.colour}
                             size={data.size}
+                            bgColour={data.bgColour}
                         />
                    )
                })}

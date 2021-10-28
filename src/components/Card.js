@@ -1,7 +1,7 @@
 import {React, useState} from 'react';
 import { Box, Image, Badge, VStack, Spacer, HStack, Select, FormControl } from '@chakra-ui/react';
 
- export default function Card({animation, name, price, colour, size}) {
+ export default function Card({animation, name, price, colour, bgColour, size}) {
      const [Size, setSize] = useState('md')
     return (
         <Box maxW='sm' border='4px' borderRadius='lg' p={3} borderColor='whiteAlpha.800'>
@@ -9,9 +9,9 @@ import { Box, Image, Badge, VStack, Spacer, HStack, Select, FormControl } from '
                 <Image mb={2} src={animation} borderRadius='lg'/>
             </a>
             
-            <VStack pt={2} mx={1} align='initial'color='secondary'>
-                <HStack pb={2}>
-                    <Box fontWeight='semibold' as='h4'>
+            <VStack pt={2} mx={1} align='initial'color='whiteAlpha.800'>
+                <HStack pb={2} textDecoration='underline'>
+                    <Box fontWeight='semibold' as='h4' >
                         {name}
                     </Box>
                     <Spacer/>
@@ -20,7 +20,7 @@ import { Box, Image, Badge, VStack, Spacer, HStack, Select, FormControl } from '
                     </Box>
                 </HStack>
                 <Box align='start'>
-                    <Badge borderRadius='full' p={2} colorScheme='teal' maxW='md'>
+                    <Badge borderRadius='full' p={2} color='whiteAlpha.900' textDecoration='underline' bgColor={bgColour} maxW='md'>
                         {colour}
                     </Badge>  
                 </Box>
@@ -31,7 +31,8 @@ import { Box, Image, Badge, VStack, Spacer, HStack, Select, FormControl } from '
                                 Stock: {size[Size]}
                             </Box>
                             <Spacer/>
-                            <Select maxW='40%' 
+                            <Select color='secondary' 
+                                    maxW='40%' 
                                     onChange={(e) => {
                                         e.preventDefault()
                                         setSize(e.target.options[e.target.selectedIndex].value)

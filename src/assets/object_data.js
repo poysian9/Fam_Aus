@@ -10,7 +10,8 @@ const objData = [
     {
         animation : gif.blue,
         name : 'Family Crewneck',
-        colour : 'Blue',
+        colour : 'Indigo',
+        bgColour: '#4001FE',
         price : '100 FTM',
         size : {
             xs : 4,
@@ -24,6 +25,7 @@ const objData = [
         animation : gif.choc,
         name : 'Family Crewneck',
         colour : 'Chocolate',
+        bgColour: '#4C3030',
         price : '100 FTM',
         size : {
             xs : 3,
@@ -36,7 +38,8 @@ const objData = [
     {
         animation : gif.green,
         name : 'Family Crewneck',
-        colour : 'Green',
+        colour : 'Sage',
+        bgColour: '#65BB85',
         price : '100 FTM',
         size : {
             xs : 3,
@@ -50,6 +53,7 @@ const objData = [
         animation : gif.olive,
         name : 'Family Crewneck',
         colour : 'Olive',
+        bgColour: '#3B4C2E',
         price : '100 FTM',
         size : {
             xs : 4,
@@ -62,7 +66,8 @@ const objData = [
     {
         animation : gif.sand,
         name : 'Family Crewneck',
-        colour : 'Sand',
+        colour : 'Peach',
+        bgColour: '#F8D2A6',
         price : '100 FTM',
         size : {
             xs : 4,
