@@ -2,7 +2,7 @@ import {React, useState} from 'react';
 import { Box, Image, Badge, VStack, Spacer, HStack, Select, FormControl } from '@chakra-ui/react';
 
  export default function Card({animation, name, price, colour, bgColour, size}) {
-     const [Size, setSize] = useState('md')
+    const [Size, setSize] = useState('md')
     return (
         <Box maxW='sm' border='4px' borderRadius='lg' p={3} borderColor='whiteAlpha.800'>
             <a href={animation} target='_blank' rel='noreferrer'>

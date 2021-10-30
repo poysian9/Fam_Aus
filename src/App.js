@@ -2,10 +2,11 @@ import NavBar from './layout/NavBar';
 import Main from './layout/Main';
 import Footer from './layout/Footer';
 import { Box , Divider} from '@chakra-ui/layout';
+import { React, useState } from 'react';
+import Web3 from 'web3';
 
-import React from 'react'
+function App() { 
 
-function App() {
     return (
         <Box bg='background'>
             <Box maxW='90%' margin="auto" overflowX='hidden'>
