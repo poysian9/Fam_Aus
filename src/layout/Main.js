@@ -1,6 +1,10 @@
 import { VStack, Box, Heading, Divider, SimpleGrid, Image } from '@chakra-ui/react';
 import React from 'react';
-import Card from '../components/Card';
+import Card1 from '../components/Card1';
+import Card2 from '../components/Card2';
+import Card3 from '../components/Card3';
+import Card4 from '../components/Card4';
+import Card5 from '../components/Card5';
 import objData from '../assets/object_data';
 import ftmHead from '../assets/ftmHead.png';
 
@@ -25,19 +29,11 @@ function Main() {
             </VStack>
             <Divider p={2}/>
             <SimpleGrid minChildWidth='400px' spacing={10} py={5} textAlign='center' justifyItems='center'>
-               {objData.map((data, id) => {
-                   return(
-                        <Card   
-                            key={id}
-                            animation={data.animation}
-                            name={data.name}
-                            price={data.price}
-                            colour={data.colour}
-                            size={data.size}
-                            bgColour={data.bgColour}
-                        />
-                   )
-               })}
+               <Card1/>
+               <Card2/>
+               <Card3/>
+               <Card4/>
+               <Card5/>
             </SimpleGrid>
         </Box>
     )
