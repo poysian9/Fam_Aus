@@ -64,24 +64,34 @@ contract familyAus1155 is ERC1155, Ownable {
         stock[24] = 4;
     }
 
-
-    function mintBatch(
+    function mintFromInv(
         address _to,
-        uint256[] memory _ids,
-        uint256[] memory _amounts,
-        bytes memory _data
+        uint256 _id,
+        uint256 _amount,
+        bytes memory 
     ) public {
-        require(_ids.length == _amounts.length, "ERC1155: ids and amounts length mismatch");
-        for (uint i=0; i<_ids.length; i++) {
-            uint id = _ids[i];
-            uint amount = _amounts[i];
-            require(stock[id] > 0, "Out of Stock");
-        
-            _mint(_to, id, amount, _data);
-        
-            stock[id] -= amount;
-        }
+        require (stock[_id] > 0, "Out of Stock");
+        _mint(_to, _id, _amount, "");
+        stock[_id] -= _amount;
     }
+
+    // function mintBatch(
+    //     address _to,
+    //     uint256[] memory _ids,
+    //     uint256[] memory _amounts,
+    //     bytes memory _data
+    // ) public {
+    //     require(_ids.length == _amounts.length, "ERC1155: ids and amounts length mismatch");
+    //     for (uint i=0; i<_ids.length; i++) {
+    //         uint id = _ids[i];
+    //         uint amount = _amounts[i];
+    //         require(stock[id] > 0, "Out of Stock");
+        
+    //         _mint(_to, id, amount, _data);
+        
+    //         stock[id] -= amount;
+    //     }
+    // }
     
 
 }
